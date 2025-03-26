@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>page_text_deduplicate</class>
+ <widget class="QWidget" name="page_text_deduplicate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>8000</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label_from_file_title">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>对文件内容去重</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_from_string_title">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>对字符串去重</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_source_directory_input">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>310</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_source_directory_button">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>27</y>
+     <width>50</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_start">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>525</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_source_text">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>360</width>
+     <height>390</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_result_text">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>360</width>
+     <height>450</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_result_title">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>去重结果</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_type_title">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>去重方式</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>530</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除重复行</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_char">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>360</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除重复字，&quot;abbc&quot;去重为&quot;abc&quot;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save_to_file">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>525</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存到文件</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
